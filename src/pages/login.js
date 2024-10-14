@@ -20,7 +20,7 @@ const Login = () => {
                         </form>
 
                         <div id="formFooter">
-                            <a class="underlineHover" href="#">Forgot Password?</a>
+                            <a class="underlineHover" href="forgot">Forgot Password?</a>
                         </div>
 
                     </div>
