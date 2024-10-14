@@ -17,7 +17,8 @@
   }
   
   a {
-    color: #92badd;
+    color: #3E13ED;
+    font-weight: bold;
     display:inline-block;
     text-decoration: none;
     font-weight: 400;
@@ -96,7 +97,8 @@
     background-color: #009CFF;
     border: none;
     color: white;
-    padding: 15px 158px;
+    padding: 15px 0px;
+    width: 82%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -233,6 +235,10 @@
     -moz-animation-delay: 0.8s;
     animation-delay: 0.8s;
   }
+
+  .fourth{
+    width: 82%;
+  }
   
   .fadeIn.fourth {
     -webkit-animation-delay: 1s;
@@ -247,7 +253,7 @@
     bottom: -10px;
     width: 0;
     height: 2px;
-    background-color: #56baed;
+    background-color: #3E13ED;
     content: "";
     transition: width 0.2s;
   }
