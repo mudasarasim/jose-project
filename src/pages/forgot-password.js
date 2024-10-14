@@ -17,7 +17,7 @@ const ForgotPassword = () => {
                         <form className='mt-5'>
                             <label>To reset your password, enter your email.</label>
                             <input type="email" id="login" class="fadeIn second" name="login" placeholder="Email" />
-                            <Link to={'/reset-password'}><input class="fadeIn fourth des" value="Reset" /></Link>
+                            <input class="fadeIn fourth des" value="Reset" />
                         </form>
 
                         <div id="formFooter">
