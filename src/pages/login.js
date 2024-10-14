@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './login.css';
 
 const Login = () => {
@@ -20,7 +21,7 @@ const Login = () => {
                         </form>
 
                         <div id="formFooter">
-                            <a class="underlineHover" href="forgot">Forgot Password?</a>
+                            <Link to={'/forgot-password'}><a class="underlineHover" href="forgot">Forgot Password?</a></Link>
                         </div>
 
                     </div>
