@@ -21,7 +21,7 @@ const Login = () => {
                         </form>
 
                         <div id="formFooter">
-                            <Link to={'/forgot-password'}><a class="underlineHover" href="forgot">Forgot Password?</a></Link>
+                            <Link to={'/forgot-password'}><p class="underlineHover">Forgot Password?</p></Link>
                         </div>
 
                     </div>
