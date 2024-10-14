@@ -93,7 +93,7 @@
   
   /* FORM TYPOGRAPHY*/
   
-  input[type=button], input[type=submit], input[type=reset]  {
+  input[type=button], input[type=submit], input[type=reset], .des  {
     background-color: #009CFF;
     border: none;
     color: white;
@@ -115,7 +115,7 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  
+    
   input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
     background-color: #009CFF;
   }
