@@ -10,6 +10,7 @@ import Security from './pages/security';
 import ManageTickets from './pages/manage-tickets';
 import CreateTicket from './pages/create-ticket';
 import EditTicket from './pages/edit-ticket';
+import AllInstructors from './pages/all-instructors';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/manage-tickets" element={<ManageTickets />} />
           <Route path="/create-ticket" element={<CreateTicket />} />
           <Route path="/edit-ticket" element={<EditTicket />} />
+          <Route path="/all-instructors" element={<AllInstructors />} />
         </Routes>
       </div>
     </Router>

@@ -2,6 +2,7 @@ import React from 'react';
 import 'react-calendar/dist/Calendar.css';
 import LeftSidebar from '../componnents/LeftSidebar';
 import RightSidebar from '../componnents/RightSidebar';
+import { Link } from 'react-router-dom';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 const StudentDashboard = () => {
@@ -359,7 +360,7 @@ const StudentDashboard = () => {
                                     </div>
                                 </div>
                                 <h2 style={{ color: '#143764' }}>Instructors</h2>
-                                <h2 style={{ float: 'right', color: '#143764', fontWeight: '500', cursor: 'pointer' }}>See All</h2>
+                                <h2 style={{ float: 'right', color: '#143764', fontWeight: '500', cursor: 'pointer' }}><Link style={{color: '#143764', fontWeight: '500'}} to={'/all-instructors'}>See All</Link></h2>
                                 <div className="col-xl-12 col-lg-12">
                                     <div className="row mt-3">
                                         {/* First Card */}
@@ -372,7 +373,7 @@ const StudentDashboard = () => {
                                                             <h2 style={{ color: 'black', fontSize: '9px', fontWeight: 500 }}>Teacher Name</h2>
                                                         </div>
                                                     </div>
-                                                    <p className="text-black" style={{ marginTop: -12, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
+                                                    <p className="text-black" style={{ marginTop: -8, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -385,7 +386,7 @@ const StudentDashboard = () => {
                                                             <h2 style={{ color: 'black', fontSize: '9px', fontWeight: 500 }}>Teacher Name</h2>
                                                         </div>
                                                     </div>
-                                                    <p className="text-black" style={{ marginTop: -12, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
+                                                    <p className="text-black" style={{ marginTop: -8, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -398,7 +399,7 @@ const StudentDashboard = () => {
                                                             <h2 style={{ color: 'black', fontSize: '9px', fontWeight: 500 }}>Teacher Name</h2>
                                                         </div>
                                                     </div>
-                                                    <p className="text-black" style={{ marginTop: -12, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
+                                                    <p className="text-black" style={{ marginTop: -8, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -411,7 +412,7 @@ const StudentDashboard = () => {
                                                             <h2 style={{ color: 'black', fontSize: '9px', fontWeight: 500 }}>Teacher Name</h2>
                                                         </div>
                                                     </div>
-                                                    <p className="text-black" style={{ marginTop: -12, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
+                                                    <p className="text-black" style={{ marginTop: -8, marginLeft: 35, fontSize: '9px' }}>View Profile</p>
                                                 </div>
                                             </div>
                                         </div>

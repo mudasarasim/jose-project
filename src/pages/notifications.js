@@ -24,7 +24,7 @@ const Notifications = () => {
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
                             <div className="col-xl-10 col-lg-10">
-                                <h1 className='text-center' style={{marginTop: '130px', fontWeight: '500'}}><img src='assets/images/fix.png' height={50} /> Notifications</h1>
+                                <h1 className='text-center' style={{marginTop: '130px', fontWeight: '500'}}><img alt='ghj' src='assets/images/fix.png' height={50} /> Notifications</h1>
                                 <h4 className='ml-4'>List of notifications</h4>
                                 <div>
                                 <div class="card-body">

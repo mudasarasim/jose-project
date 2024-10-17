@@ -24,7 +24,7 @@ const CreateTicket = () => {
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
                             <div className="col-xl-10 col-lg-10">
-                                <h1 className='text-center' style={{ marginTop: '130px', fontWeight: '500' }}><img src='assets/images/fix.png' height={50} /> New Ticket</h1>
+                                <h1 className='text-center' style={{ marginTop: '130px', fontWeight: '500' }}><img src='assets/images/fix.png' alt='jk' height={50} /> New Ticket</h1>
                                 <div>
                                     <form className='forms-sample mt-4'>
                                         <div className='row'>

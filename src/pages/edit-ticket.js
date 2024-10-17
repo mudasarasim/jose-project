@@ -24,27 +24,45 @@ const EditTicket = () => {
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
                             <div className="col-xl-10 col-lg-10">
-                                <h1 className='text-center' style={{ marginTop: '130px', fontWeight: '500' }}><img src='assets/images/fix.png' height={50} /> Ticket No: 123</h1>
+                                <h1 className='text-center' style={{ marginTop: '130px', fontWeight: '500' }}><img src='assets/images/fix.png' alt='jyku' height={50} /> Ticket No: 123</h1>
                                 <div>
                                     <form className='forms-sample mt-4'>
                                         <div className='row'>
                                             <div className="form-group col-xl-12 col-lg-12">
                                                 <label htmlFor="exampleInputAddress" style={{ fontSize: '16px', fontWeight: '600' }}>Subject</label>
-                                                <input type="text" className="form-control" style={{ border: '2px solid #858585' }} id="exampleInputAddress" />
+                                                <input type="text" className="form-control" style={{ border: '2px solid #858585' }} id="exampleInputAddress" placeholder='Ticket Subject' />
                                             </div>
-                                            <div className="form-group col-xl-6 col-lg-6">
+                                            <div className="form-group col-xl-3 col-lg-3">
                                                 <label htmlFor="exampleInputTimezone" style={{ fontSize: '16px', fontWeight: '600' }}>Category</label>
                                                 <select className="form-control" id="exampleInputTimezone" style={{ border: '2px solid #858585' }}>
-                                                    <option value="">Select Category</option>
+                                                    <option value="">Category</option>
                                                     <option value="Pacific/Midway">(UTC-11:00) Midway Island</option>
                                                     <option value="Pacific/Honolulu">(UTC-10:00) Hawaii</option>
 
                                                 </select>
                                             </div>
-                                            <div className="form-group col-xl-6 col-lg-6">
+                                            <div className="form-group col-xl-3 col-lg-3">
                                                 <label htmlFor="exampleInputTimezone" style={{ fontSize: '16px', fontWeight: '600' }}>Ticket Type</label>
                                                 <select className="form-control" id="exampleInputTimezone" style={{ border: '2px solid #858585' }}>
-                                                    <option value="">Select Ticket Type</option>
+                                                    <option value="">Type</option>
+                                                    <option value="Pacific/Midway">(UTC-11:00) Midway Island</option>
+                                                    <option value="Pacific/Honolulu">(UTC-10:00) Hawaii</option>
+
+                                                </select>
+                                            </div>
+                                            <div className="form-group col-xl-3 col-lg-3">
+                                                <label htmlFor="exampleInputTimezone" style={{ fontSize: '16px', fontWeight: '600' }}>Priorty Type</label>
+                                                <select className="form-control" id="exampleInputTimezone" style={{ border: '2px solid #858585' }}>
+                                                    <option value="">Medium</option>
+                                                    <option value="Pacific/Midway">(UTC-11:00) Midway Island</option>
+                                                    <option value="Pacific/Honolulu">(UTC-10:00) Hawaii</option>
+
+                                                </select>
+                                            </div>
+                                            <div className="form-group col-xl-3 col-lg-3">
+                                                <label htmlFor="exampleInputTimezone" style={{ fontSize: '16px', fontWeight: '600' }}>Status</label>
+                                                <select className="form-control" id="exampleInputTimezone" style={{ border: '2px solid #858585' }}>
+                                                    <option value="">Closed</option>
                                                     <option value="Pacific/Midway">(UTC-11:00) Midway Island</option>
                                                     <option value="Pacific/Honolulu">(UTC-10:00) Hawaii</option>
 
@@ -52,14 +70,18 @@ const EditTicket = () => {
                                             </div>
                                             <div className="form-group col-xl-12 col-lg-12">
                                                 <label htmlFor="exampleInputAddress" style={{ fontSize: '16px', fontWeight: '600' }}>Description</label>
-                                                <textarea rows={10} className="form-control" style={{ border: '2px solid #858585' }} id="exampleInputAddress" ></textarea>
+                                                <textarea rows={10} className="form-control" style={{ border: '2px solid #858585' }} id="exampleInputAddress" placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit,' ></textarea>
                                             </div>
                                             <div className="form-group col-xl-12 col-lg-12">
                                                 <label htmlFor="exampleInputAddress" style={{ fontSize: '16px', fontWeight: '600' }}>Related File</label>
                                                 <input type="file" className="form-control" style={{ border: '2px solid #858585' }} id="exampleInputAddress" />
                                             </div>
-                                            <button type="submit" className="btn mr-2 mb-4 ml-3" style={{ background: '#32A3EB', color: 'white' }}>Submit</button>
-                                            <button type="submit" className="btn mr-2 mb-4 ml-3" style={{ background: 'transparent', color: '#32A3EB', border: '1px solid #32A3EB' }}>Close</button>
+                                            <div className="form-group col-xl-12 col-lg-12">
+                                                <label htmlFor="exampleInputAddress" style={{ fontSize: '16px', fontWeight: '600' }}>Comments</label>
+                                                <textarea rows={5} className="form-control" style={{ border: '2px solid #858585' }} id="exampleInputAddress" placeholder='Lorem ipsum dolor sit amet, consectetur adipiscing elit,' ></textarea>
+                                            </div>
+                                            {/* <button type="submit" className="btn mr-2 mb-4 ml-3" style={{ background: '#32A3EB', color: 'white' }}>Submit</button>
+                                            <button type="submit" className="btn mr-2 mb-4 ml-3" style={{ background: 'transparent', color: '#32A3EB', border: '1px solid #32A3EB' }}>Close</button> */}
                                         </div>
                                     </form>
                                 </div>

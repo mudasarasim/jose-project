@@ -28,7 +28,7 @@ const ManageTickets = () => {
                                 <div><Link to={'/create-ticket'}><button className='btn btn-sm mb-3 ml-3 btn-dark'>Create Ticket</button></Link></div>
                                 <div className='ml-3' style={{height: '50px', width: '95%', background: '#D9D9D9'}}>
                                     <div className='row'>
-                                    <h4 className='ml-4 pt-2 col-lg-4'><img src='assets/images/fix.png' height={30} />Ticket Status</h4>
+                                    <h4 className='ml-4 pt-2 col-lg-4'><img src='assets/images/fix.png' alt='hyjk' height={30} />Ticket Status</h4>
                                     <div className='col-lg-3 mt-2'></div>
                                     <form className='col-lg-4 ml-3 mt-2'>
                                         <input type='text' className='form-control' placeholder='Search Ticket' />
