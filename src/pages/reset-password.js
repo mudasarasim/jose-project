@@ -22,7 +22,7 @@ const ResetPassword = () => {
                         </form>
 
                         <div id="formFooter">
-                            <Link to={'/forgot-password'}><p class="underlineHover">Forgot Password?</p></Link>
+                            <Link to={'/'}><p class="underlineHover">Back To Login</p></Link>
                         </div>
 
                     </div>
