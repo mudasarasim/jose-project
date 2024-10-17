@@ -23,7 +23,7 @@ const Security = () => {
                     <div className="content-wrapper pb-0">
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
-                            <div className="col-xl-10 col-lg-10 mb-5" style={{marginTop: '130px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                            <div className="col-xl-10 col-lg-10 mb-5" style={{marginTop: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                                 <div style={{height: '360px', width: '640px', background: 'white', boxShadow: '1px 2px 3px 4px gray', textAlign: 'center'}}>
                                     <div className='mt-5'>
                                     <h3>Having security concerns?</h3>
@@ -31,7 +31,7 @@ const Security = () => {
                                     <h4 className='ml-5 mt-4 mb-4' style={{textAlign: 'left'}}>To reset your password, enter your email. </h4>
                                     <form>
                                         <input type='email' placeholder='Enter Your Email Here' />
-                                        <input type='submit' value="Change Password" style={{width: '370px'}} />
+                                        <input type='submit' value="Change Password" style={{width: '330px', height: '60px'}} />
                                     </form>
                                     </div>
                                 </div>
