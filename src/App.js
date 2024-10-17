@@ -4,6 +4,7 @@ import ForgotPassword from './pages/forgot-password';
 import Login from './pages/login';
 import ResetPassword from './pages/reset-password';
 import StudentDashboard from './pages/student-dashboard';
+import EditProfile from './pages/edit-profile';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/student-dashboard" element={<StudentDashboard />} />
+          <Route path="/edit-profile" element={<EditProfile />} />
         </Routes>
       </div>
     </Router>
