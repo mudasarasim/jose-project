@@ -34,9 +34,9 @@ const Sidebar = () => {
                     </Link>
                 </li>
                 <li className="nav-item" style={{ marginTop: '18px', marginLeft: '20px' }}>
-                    <Link className="nav-link" to="/ticket">
-                        <i className="mdi mdi-settings menu-icon" style={{ color: isActive('/ticket') ? 'black' : '#858585' }}></i>
-                        <span className="menu-title" style={{ fontSize: '20px', fontWeight: '400', color: isActive('/ticket') ? 'black' : '#858585', marginLeft: '5px' }}>Ticket</span>
+                    <Link className="nav-link" to="/manage-tickets">
+                        <i className="mdi mdi-settings menu-icon" style={{ color: isActive('/manage-tickets') ? 'black' : '#858585' }}></i>
+                        <span className="menu-title" style={{ fontSize: '20px', fontWeight: '400', color: isActive('/manage-tickets') ? 'black' : '#858585', marginLeft: '5px' }}>Ticket</span>
                     </Link>
                 </li>
                 <li className="nav-item" style={{ marginTop: '18px', marginLeft: '20px' }}>

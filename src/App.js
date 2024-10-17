@@ -7,6 +7,7 @@ import StudentDashboard from './pages/student-dashboard';
 import EditProfile from './pages/edit-profile';
 import Notifications from './pages/notifications';
 import Security from './pages/security';
+import ManageTickets from './pages/manage-tickets';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/security" element={<Security />} />
+          <Route path="/manage-tickets" element={<ManageTickets />} />
         </Routes>
       </div>
     </Router>

@@ -79,8 +79,8 @@ const RightSidebar = () => {
                             />
                         </a>
                         <ul className="dropdown-menu" aria-labelledby="chatDropdown">
-                                <Link to={'/edit-profile'}><li><span className="dropdown-item">settings</span></li></Link>
-                                <li><a className="dropdown-item" href="jhkjwc">change password</a></li>
+                                <Link to={'/edit-profile'}><li><span className="dropdown-item">Settings</span></li></Link>
+                                <li><span className="dropdown-item">Change password</span></li>
                                 <Link to={'/'}><li><span className="dropdown-item">Logout</span></li></Link>
                             </ul>
                     </li>
