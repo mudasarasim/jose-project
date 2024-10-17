@@ -8,6 +8,8 @@ import EditProfile from './pages/edit-profile';
 import Notifications from './pages/notifications';
 import Security from './pages/security';
 import ManageTickets from './pages/manage-tickets';
+import CreateTicket from './pages/create-ticket';
+import EditTicket from './pages/edit-ticket';
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/security" element={<Security />} />
           <Route path="/manage-tickets" element={<ManageTickets />} />
+          <Route path="/create-ticket" element={<CreateTicket />} />
+          <Route path="/edit-ticket" element={<EditTicket />} />
         </Routes>
       </div>
     </Router>

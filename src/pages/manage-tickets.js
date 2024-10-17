@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar from '../componnents/sidebar';
+import { Link } from 'react-router-dom';
 
 const ManageTickets = () => {
     return (
@@ -24,7 +25,7 @@ const ManageTickets = () => {
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
                             <div className="col-xl-10 col-lg-10" style={{marginTop: '130px'}}>
-                                <div><button className='btn btn-sm mb-3 ml-3 btn-dark'>Create Ticket</button></div>
+                                <div><Link to={'/create-ticket'}><button className='btn btn-sm mb-3 ml-3 btn-dark'>Create Ticket</button></Link></div>
                                 <div className='ml-3' style={{height: '50px', width: '95%', background: '#D9D9D9'}}>
                                     <div className='row'>
                                     <h4 className='ml-4 pt-2 col-lg-4'><img src='assets/images/fix.png' height={30} />Ticket Status</h4>
