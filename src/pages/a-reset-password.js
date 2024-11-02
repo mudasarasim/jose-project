@@ -4,7 +4,7 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './login.css';
 
-const Login = () => {
+const AdminReset = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
@@ -14,10 +14,10 @@ const Login = () => {
         e.preventDefault();
 
         // Check credentials
-        if (email === 'student@gmail.com' && password === 'student') {
+        if (email === 'admin@gmail.com' && password === 'admin') {
             localStorage.setItem('role', 'student'); // Set role as student in localStorage
-            navigate('/student-dashboard');
-        } else if (email === 'teacher@gmail.com' && password === 'teacher') {
+            navigate('/admin-dashboard');
+        } else if (email === 'setadmin@gmail.com' && password === 'setadmin') {
             localStorage.setItem('role', 'teacher'); // Set role as teacher in localStorage
             navigate('/teacher-dashboard');
         } else {
@@ -30,35 +30,39 @@ const Login = () => {
     };
 
     return (
-        <div className='main'>
+        <div className='mainAdmin'>
+              <h3 style={{textAlign: 'center', color: 'white', paddingTop: '5%'}}>Little-Bots Admin Login</h3>
+                          
             <div className='login'>
-                <div className="wrapper fadeInDown">
-                    <div id="formContent">
+                <div className="wrapper fadeInDown" style={{marginTop: '-5%'}}>
+                    <div id="formAdmin">
                         <div className="fadeIn first mt-4">
-                            <h1>Little-Bots</h1>
-                            <p>Hello, welcome back</p>
+                            <p>Please fill in passwords and reset your password</p>
                         </div>
 
                         <form onSubmit={handleSubmit}>
                             <input
-                                type="email"
+                             style={{borderRadius: '10px'}}
+                                type="password"
                                 id="login"
                                 className="fadeIn second"
                                 name="login"
-                                placeholder="Email"
+                                placeholder="New Password"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                             />
                             <input
+                            style={{borderRadius: '10px'}}
                                 type="password"
                                 id="password"
                                 className="fadeIn third"
                                 name="login"
-                                placeholder="Password"
+                                placeholder="Confirm Password"
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                             <input
+                            style={{background: '#2148C0', borderRadius: '10px'}}
                                 type="submit"
                                 className="fadeIn fourth"
                                 value="Sign In"
@@ -66,8 +70,8 @@ const Login = () => {
                         </form>
 
                         <div id="formFooter">
-                            <Link to={'/forgot-password'}>
-                                <p className="underlineHover">Forgot Password?</p>
+                            <Link to={'/admin-login'}>
+                                <p className="underlineHover">Back To Login</p>
                             </Link>
                         </div>
                     </div>
@@ -78,4 +82,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default AdminReset;

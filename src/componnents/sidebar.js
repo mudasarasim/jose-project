@@ -6,6 +6,7 @@ const Sidebar = () => {
 
     const isActive = (path) => location.pathname === path; // Check if the path matches the current location
 
+    
     return (
         <nav className="sidebar sidebar-offcanvas" id="sidebar" style={{ borderRight: '1px solid black', borderRadius: '0px', background: 'white' }}>
             <ul className="nav" style={{ marginTop: '50px' }}>
@@ -15,12 +16,14 @@ const Sidebar = () => {
                         <span className="menu-title" style={{ fontSize: '25px', fontWeight: '500', marginLeft: '10px', color: 'black'}}>Settings</span>
                     </Link>
                 </li>
+                
                 <li className="nav-item" style={{ marginTop: '70px', marginLeft: '20px' }}>
                     <Link className="nav-link" to="/edit-profile">
                         <i className="mdi mdi-pencil menu-icon" style={{ color: isActive('/edit-profile') ? 'black' : '#858585' }}></i>
                         <span className="menu-title" style={{ fontSize: '20px', fontWeight: '400', marginLeft: '5px', color: isActive('/edit-profile') ? 'black' : '#858585' }}>Edit Profile</span>
                     </Link>
                 </li>
+              
                 <li className="nav-item" style={{ marginTop: '18px', marginLeft: '20px' }}>
                     <Link className="nav-link" to="/notifications">
                         <i className="mdi mdi-bell menu-icon" style={{ color: isActive('/notifications') ? 'black' : '#858585' }}></i>
@@ -45,6 +48,8 @@ const Sidebar = () => {
                         <span className="menu-title" style={{ fontSize: '20px', fontWeight: '400', color: isActive('/help') ? 'black' : '#858585', marginLeft: '5px' }}>Help</span>
                     </Link>
                 </li>
+                
+                
             </ul>
         </nav>
     );

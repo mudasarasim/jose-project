@@ -11,6 +11,15 @@ import ManageTickets from './pages/manage-tickets';
 import CreateTicket from './pages/create-ticket';
 import EditTicket from './pages/edit-ticket';
 import AllInstructors from './pages/all-instructors';
+import TeacherDashboard from './pages/teacher-dashboard';
+import Payment from './pages/payments';
+import StrikeCount from './pages/strike-count';
+import UpdatePortfolio from './pages/update-portfolio';
+import Help from './pages/help';
+import AdminLogin from './pages/admin-login';
+import AdminForgot from './pages/a-forgot-password';
+import AdminReset from './pages/a-reset-password';
+import LearnerAdmin from './pages/learner-admin-dashboard';
 
 function App() {
   return (
@@ -21,6 +30,7 @@ function App() {
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/student-dashboard" element={<StudentDashboard />} />
+          <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
           <Route path="/edit-profile" element={<EditProfile />} />
           <Route path="/notifications" element={<Notifications />} />
           <Route path="/security" element={<Security />} />
@@ -28,6 +38,14 @@ function App() {
           <Route path="/create-ticket" element={<CreateTicket />} />
           <Route path="/edit-ticket" element={<EditTicket />} />
           <Route path="/all-instructors" element={<AllInstructors />} />
+          <Route path="/payments" element={<Payment />} />
+          <Route path="/help" element={<Help />} />
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/strike-count" element={<StrikeCount />} />
+          <Route path="/update-portfolio" element={<UpdatePortfolio />} />
+          <Route path="/a-forgot-password" element={<AdminForgot />} />
+          <Route path="/a-reset-password" element={<AdminReset />} />
+          <Route path="/learner-admin-dashboard" element={<LearnerAdmin />} />
         </Routes>
       </div>
     </Router>

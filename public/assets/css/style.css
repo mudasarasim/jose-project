@@ -15177,9 +15177,14 @@
         color: #b3b3b3; }
     .sidebar-dark .sidebar .nav.sub-menu .nav-item:hover {
       background: transparent; }
-
+      .fixed-top{
+        z-index: 0;
+      }
   /* style for off-canvas menu*/
   @media screen and (max-width: 991px) {
+    .fixed-top{
+      z-index: 1030;
+    }
     .sidebar-offcanvas {
       position: fixed;
       max-height: calc(100vh - 70px);
