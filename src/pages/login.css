@@ -156,7 +156,8 @@
     border: none;
     color: #0d0d0d;
     padding: 15px 0px;
-    text-align: center;
+    text-align: left;
+    padding-left: 10px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -270,6 +271,10 @@
   }
   
   /* Simple CSS3 Fade-in Animation */
+  .underlineHover{
+     float: right;
+  }
+
   .underlineHover:after {
     display: block;
     left: 0;

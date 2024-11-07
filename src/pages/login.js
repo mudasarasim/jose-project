@@ -63,13 +63,15 @@ const Login = () => {
                                 className="fadeIn fourth"
                                 value="Sign In"
                             />
-                        </form>
-
-                        <div id="formFooter">
-                            <Link to={'/forgot-password'}>
+                            <Link className='mb-4' to={'/forgot-password'}>
+                                <p className="underlineHover">Purchase a program <br/> To create an account</p>
+                            </Link>
+                            <Link className='ml-5 mb-4' to={'/forgot-password'}>
                                 <p className="underlineHover">Forgot Password?</p>
                             </Link>
-                        </div>
+                        </form>
+
+                                                    
                     </div>
                 </div>
             </div>
