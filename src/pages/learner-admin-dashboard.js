@@ -1,102 +1,96 @@
-import React from 'react';
-import AdminSidebar from '../componnents/admin-sidebar';
+import React from "react";
+import { Pie } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import AdminSidebar from "../componnents/admin-sidebar";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
 
 const LearnerAdmin = () => {
-    return (
-        <div className="container-scroller">
-            <AdminSidebar />  {/* Include the Sidebar component */}
+  // Pie chart data
+  const data = {
+    labels: ["Pending", "Active", "Resolved"],
+    datasets: [
+      {
+        label: "Teacher Tickets",
+        data: [5, 10, 15], // Example data
+        backgroundColor: ["#FF6384", "#FFCE56", "#36A2EB"],
+        hoverBackgroundColor: ["#FF6384", "#FFCE56", "#36A2EB"],
+      },
+    ],
+  };
 
-            <nav className="navbar rdp col-lg-1 col-12 p-lg-0 fixed-top d-flex flex-row">
-                <div className="navbar-menu-wrapper rdp d-flex align-items-stretch justify-content-between">
-                    <a className="navbar-brand brand-logo-mini align-self-center d-lg-none" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a>
-                    <button className="navbar-toggler navbar-toggler align-self-center mr-2" type="button" data-toggle="minimize">
-                        <i className="mdi mdi-menu"></i>
-                    </button>
-                    <button className="navbar-toggler rdp navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
-                        <span className="mdi mdi-menu"></span>
-                    </button>
-                </div>
-            </nav>
+  const options = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "bottom",
+      },
+    },
+  };
 
-            <div className="container-fluid page-body-wrapper" style={{ marginTop: '-50px' }}>
-                <div className="main-panel" style={{ marginTop: '-68px' }}>
-                    <div className="content-wrapper pb-0">
-                        <div className="row">
-                            <div className="col-xl-1 col-lg-1"></div>
-                            <div className="col-xl-10 col-lg-10">
-                                <h1 className='text-center' style={{marginTop: '130px', fontWeight: '500'}}><img alt='ghj' src='assets/images/fix.png' height={50} /> Notifications</h1>
-                                <h4 className='ml-4'>List of notifications</h4>
-                                <div>
-                                <div class="card-body">
-                    <div class="table-responsive">
-                      <table class="table table-bordered mb-5">
-                        <thead>
-                          <tr>
-                            <th>Date</th>
-                            <th>Subject</th>
-                            <th>Notification Body</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>02/03/2024</td>
-                            <td>
-                                Subject                         
-                            </td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                          </tr>
-                          <tr>
-                            <td>03/03/2024</td>
-                            <td>
-                             Subject
-                             </td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                          </tr>
-                          <tr>
-                            <td>04/03/2024</td>
-                            <td>
-                              Subject
-                            </td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                          </tr>
-                          <tr>
-                            <td>05/03/2024</td>
-                            <td>
-                              Subject
-                            </td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                          </tr>
-                          <tr>
-                            <td>06/03/2024</td>
-                            <td>
-                              Subject
-                            </td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                          </tr>
-                          <tr>
-                            <td>07/03/2024</td>
-                            <td>
-                              Subject
-                            </td>
-                            <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                                </div>
+  return (
+    <div className="container-scroller">
+      <AdminSidebar /> {/* Sidebar */}
 
-                            </div>
-                            <div className="col-xl-1 col-lg-1">
-                                <span><i className='mdi mdi-bell menu-icon' style={{ marginLeft: '-57px', fontSize: '30px', marginTop: '-40px', border: '2px solid #457B9D', borderRadius: '50%' }}></i></span>
-                                <img src="assets/images/faces/face1.jpg" alt="hjy" height={42} style={{ marginLeft: '18px', marginTop: '-9px', border: '2px solid #457B9D', borderRadius: '50%' }} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      {/* Navbar */}
+      <nav style={{marginLeft: '400px'}}  className="navbar fixed-top">
+        <div className="navbar-menu-wrapper d-flex align-items-center justify-content-between">
+          <h4></h4>
+          <div>
+            <i className="mdi mdi-bell" style={{ marginRight: "15px" }}></i>
+            <i className="mdi mdi-chat" style={{ marginRight: "15px" }}></i>
+            <img
+              src="assets/images/faces/face1.jpg"
+              alt="Profile"
+              style={{
+                height: "42px",
+                borderRadius: "50%",
+                border: "2px solid #457B9D",
+              }}
+            />
+          </div>
         </div>
-    );
+      </nav>
+
+      {/* Main Content */}
+      <div className="container-fluid page-body-wrapper">
+        <div className="main-panel">
+          <div className="content-wrapper">
+            <div className="row">
+              {/* Statistics Cards */}
+              <div className="col-lg-4">
+                <div className="card p-4 text-center">
+                  <h5>Total Assigned Teachers</h5>
+                  <h2 style={{fontSize: '90px', marginTop: '-10px', marginBottom: '-16px'}}>20</h2>
+                </div>
+                <div className="card p-4 text-center mt-3">
+                  <h5>Total Assigned Students</h5>
+                  <h2 style={{fontSize: '90px', marginTop: '-10px', marginBottom: '-16px'}}>50</h2>
+                </div>
+              </div>
+
+              {/* Pie Chart */}
+              <div className="col-lg-7">
+                <div className="card" style={{height: '400px'}}>
+                  <h5 className="ml-3 mt-4">Statistics</h5>
+                  <div className="card-body" style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <Pie data={data} options={options} />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+         
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default LearnerAdmin;
