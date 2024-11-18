@@ -14,10 +14,10 @@ const AdminLogin = () => {
         e.preventDefault();
 
         // Check credentials
-        if (email === 'admin@gmail.com' && password === 'admin') {
+        if (email === 'master   admin@gmail.com' && password === 'admin') {
             localStorage.setItem('role', 'admin'); // Set role as student in localStorage
             navigate('/admin-dashboard');
-        } else if (email === 'learneradmin@gmail.com' && password === 'admin') {
+        } else if (email === 'admin@gmail.com' && password === 'admin') {
             localStorage.setItem('role', 'learner_admin'); // Set role as teacher in localStorage
             navigate('/learner-admin-dashboard');
         } else {

@@ -20,6 +20,7 @@ import AdminLogin from './pages/admin-login';
 import AdminForgot from './pages/a-forgot-password';
 import AdminReset from './pages/a-reset-password';
 import LearnerAdmin from './pages/learner-admin-dashboard';
+import MakeupClasses from './pages/makeup-classes';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
           <Route path="/a-forgot-password" element={<AdminForgot />} />
           <Route path="/a-reset-password" element={<AdminReset />} />
           <Route path="/learner-admin-dashboard" element={<LearnerAdmin />} />
+          <Route path="/makeup-classes" element={<MakeupClasses />} />
         </Routes>
       </div>
     </Router>
