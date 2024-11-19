@@ -63,7 +63,7 @@ const Login = () => {
                                 className="fadeIn fourth"
                                 value="Sign In"
                             />
-                            <Link className='mb-4' to={'/forgot-password'}>
+                            <Link className='mb-4' to={'/admin-login'}>
                                 <p className="underlineHover">Purchase a program <br/> To create an account</p>
                             </Link>
                             <Link className='ml-5 mb-4' to={'/forgot-password'}>
