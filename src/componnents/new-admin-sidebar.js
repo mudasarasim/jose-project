@@ -8,7 +8,7 @@ const NewAdminSidebar = () => {
 
     
     return (
-        <nav className="sidebar sidebar-offcanvas" id="sidebar" style={{ borderRadius: '0px', background: '#3C64784D' }}>
+        <nav className="sidebar sidebar-offcanvas" id="sidebar" style={{ borderRadius: '0px', background: '#3C64784D', height: '115vh' }}>
             <ul className="nav" style={{ marginTop: '50px'}}>
                 
                 <div style={{background: 'white', padding: '20px 0', width: '225px', marginLeft: '17px', borderRadius: '15px', marginTop: '30px', height: '430px'}}>
