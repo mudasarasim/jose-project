@@ -23,6 +23,7 @@ import LearnerAdmin from './pages/learner-admin-dashboard';
 import MakeupClasses from './pages/makeup-classes';
 import AdminProfile from './pages/admin-profile';
 import AdminNotifications from './pages/admin-notifications';
+import AdminSecurity from './pages/admin-security';
 
 function App() {
   return (
@@ -52,6 +53,7 @@ function App() {
           <Route path="/makeup-classes" element={<MakeupClasses />} />
           <Route path="/admin-profile" element={<AdminProfile />} />
           <Route path="/admin-notifications" element={<AdminNotifications />} />
+          <Route path="/admin-security" element={<AdminSecurity />} />
         </Routes>
       </div>
     </Router>
