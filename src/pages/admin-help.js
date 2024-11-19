@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import NewAdminSidebar from '../componnents/new-admin-sidebar';
 import { Link } from 'react-router-dom';
 
-const AdminSecurity = () => {
+const AdminHelp = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
     const toggleDropdown = () => {
@@ -130,26 +130,23 @@ const AdminSecurity = () => {
                 </div>
             </nav>
 
-            <div className="container-fluid page-body-wrapper" style={{ marginTop: '-70px' }}>
-                <div className="main-panel" style={{ marginTop: '-8px' }}>
+            <div className="container-fluid page-body-wrapper" style={{ marginTop: '-50px' }}>
+                <div className="main-panel" style={{ marginTop: '-68px' }}>
                     <div className="content-wrapper pb-0">
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
                             <div className="col-xl-10 col-lg-10 mb-5" style={{marginTop: '120px', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                                 <div style={{height: '360px', width: '640px', background: 'white', boxShadow: '1px 2px 3px 4px gray', textAlign: 'center'}}>
                                     <div className='mt-5'>
-                                    <h3>Having security concerns?</h3>
-                                    <h5>Just change password</h5>
-                                    <h4 className='ml-5 mt-4 mb-4' style={{textAlign: 'left'}}>To reset your password, enter your email. </h4>
-                                    <form>
-                                        <input type='email' placeholder='Enter Your Email Here' />
-                                        <input type='submit' value="Change Password" style={{width: '330px', height: '60px'}} />
-                                    </form>
+                                    <h3>Contact Us</h3>
+                                    <h5>By just single text or call</h5>
+                                    <div className='mt-5'><i className="mdi mdi-email-outline" style={{ fontSize: '36px', marginRight: '20px', marginTop: '20px' }}></i><h4>test@gmail.com</h4></div>
+                                    <div className='mt-3'><i className="mdi mdi-phone-outline" style={{ fontSize: '36px', marginRight: '20px', marginTop: '20px' }}></i><h4> +1 123 123 1234</h4></div>
                                     </div>
                                 </div>
 
                             </div>
-                            
+                           
                         </div>
                     </div>
                 </div>
@@ -158,4 +155,4 @@ const AdminSecurity = () => {
     );
 };
 
-export default AdminSecurity;
+export default AdminHelp;

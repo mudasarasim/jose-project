@@ -110,7 +110,7 @@ const AdminProfile = () => {
                                     </Link>
                                 </div>
                                 <div style={{ marginBottom: "20px" }}>
-                                    <Link to={'/makeup-classes'} style={{ color: '#8E8E93' }}>
+                                    <Link to={'/admin-profile'} style={{ color: '#8E8E93' }}>
                                         <i className="mdi mdi-settings" style={{ marginRight: "10px", fontSize: '25px' }}></i>
                                         Settings
                                     </Link>

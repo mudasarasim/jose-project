@@ -24,6 +24,7 @@ import MakeupClasses from './pages/makeup-classes';
 import AdminProfile from './pages/admin-profile';
 import AdminNotifications from './pages/admin-notifications';
 import AdminSecurity from './pages/admin-security';
+import AdminHelp from './pages/admin-help';
 
 function App() {
   return (
@@ -54,6 +55,7 @@ function App() {
           <Route path="/admin-profile" element={<AdminProfile />} />
           <Route path="/admin-notifications" element={<AdminNotifications />} />
           <Route path="/admin-security" element={<AdminSecurity />} />
+          <Route path="/admin-help" element={<AdminHelp />} />
         </Routes>
       </div>
     </Router>
