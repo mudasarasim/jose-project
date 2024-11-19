@@ -81,12 +81,12 @@ const LearnerAdmin = () => {
             marginLeft: '150px'
           }}
         >
-          <i className="mdi mdi-bell" style={{
+          <i className="mdi mdi-bell p-1" style={{
             fontSize: "24px", borderRadius: "50%",
             border: "2px solid #457B9D",
             cursor: "pointer",
           }}></i>
-          <i className="mdi mdi-chat" style={{
+          <i className="mdi mdi-chat p-1" style={{
             fontSize: "24px", borderRadius: "50%",
             border: "2px solid #457B9D",
             cursor: "pointer",
