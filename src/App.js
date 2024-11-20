@@ -27,6 +27,9 @@ import AdminSecurity from './pages/admin-security';
 import AdminHelp from './pages/admin-help';
 import StudentAllMakeupClasses from './pages/student-all-makeup-classes';
 import ClassroomSupport from './pages/classroom-support';
+import AdminTickets from './pages/admin-tickets';
+import AdminEditTicket from './pages/admin-edit-ticket';
+import Strikes from './pages/strikes';
 
 function App() {
   return (
@@ -44,6 +47,7 @@ function App() {
           <Route path="/manage-tickets" element={<ManageTickets />} />
           <Route path="/create-ticket" element={<CreateTicket />} />
           <Route path="/edit-ticket" element={<EditTicket />} />
+          <Route path="/admin-edit-ticket" element={<AdminEditTicket />} />
           <Route path="/all-instructors" element={<AllInstructors />} />
           <Route path="/payments" element={<Payment />} />
           <Route path="/help" element={<Help />} />
@@ -60,6 +64,8 @@ function App() {
           <Route path="/admin-help" element={<AdminHelp />} />
           <Route path="/student-all-makeup-classes" element={<StudentAllMakeupClasses />} />
           <Route path="/classroom-support" element={<ClassroomSupport />} />
+          <Route path="/admin-tickets" element={<AdminTickets />} />
+          <Route path="/strikes" element={<Strikes />} />
         </Routes>
       </div>
     </Router>

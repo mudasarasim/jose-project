@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import AdminSidebar from '../componnents/admin-sidebar';
 
-const ClassroomSupport = () => {
+const Strikes = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
     const toggleDropdown = () => {
@@ -136,53 +136,52 @@ const ClassroomSupport = () => {
                     <div className="content-wrapper pb-0">
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
-                            <div className="col-xl-10 col-lg-10" style={{ marginTop: '30px',  marginLeft: '-100px'}}>
-                                <div className='ml-3' style={{ height: '50px', width: '122%', background: '#D9D9D9' }}>
+                            <div className="col-xl-10 col-lg-10" style={{marginTop: '30px'}}>
+                                <div className='ml-3' style={{height: '50px', width: '95%', background: '#D9D9D9'}}>
                                     <div className='row'>
-                                        <h4 className='ml-3 pt-3 col-lg-5'>Classroom Support</h4>
-                                        <div className='col-lg-2 ml-3 mt-2'></div>
-                                        <form className='col-lg-4 ml-3 mt-2'>
-                                            <input type='text' className='form-control' placeholder='Search' />
-                                        </form>
+                                    <h4 className='ml-3 pt-3 col-lg-3'>Teacher Strikes</h4>
+                                    <div className='col-lg-2 mt-2' style={{marginLeft: '-30px'}}><input type='text' className='form-control' placeholder='Lesson 01' /></div>
+                                    <div className='col-lg-2 ml-3 mt-2'></div>
+                                    <form className='col-lg-4 ml-3 mt-2'>
+                                        <input type='text' style={{marginLeft: '30px'}} className='form-control' placeholder='Search' />
+                                    </form>
                                     </div>
                                 </div>
-                                <div className='col-lg-12 grid-margin stretch-card' style={{marginLeft: '-20px'}}> 
-                                    <div className="card-body">
-                                        <div className="table-responsive">
-                                            <table className="table table-bordered mb-5">
-                                                <thead>
-                                                    <tr>
-                                                        <td style={{background: '#D9D9D9'}}>Class Id</td>
-                                                        <td style={{background: '#D9D9D9'}}>Student</td>
-                                                        <td style={{background: '#D9D9D9'}}>Teacher</td>
-                                                        <td style={{background: '#D9D9D9'}}>Date</td>
-                                                        <td style={{background: '#D9D9D9'}}>Time</td>
-                                                        <td style={{background: '#D9D9D9'}}>Student Attendance</td>
-                                                        <td style={{background: '#D9D9D9'}}>Teacher Attendance</td>
-                                                        <td style={{background: '#D9D9D9'}}>Action Button</td>
-                                                    </tr>
-                                                </thead>
+                                <div>
+                                    <div class="card-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered mb-5">
+                                              
                                                 <tbody>
                                                     <tr>
-                                                        <td>01</td>
-                                                        <td>Jorija Smith</td>
-                                                        <td>John Smith</td>
-                                                        <td>02/02/2024</td>
-                                                        <td>04:30PM</td>
-                                                        <td>29:30</td>
-                                                        <td>30:00</td>
-                                                        <td>
-                                                            <button className="btn btn-success btn-sm">Enter</button>
-                                                            <button className="btn btn-warning btn-sm">Pending</button>
-                                                        </td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>John Smith</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>                                                       
+                                                    </tr>
+                                                    <tr>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>
+                                                        <td><Link to={'/student-all-makeup-classes'}>Teacher Name</Link></td>                                                       
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-
                                     </div>
                                 </div>
+
                             </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -191,4 +190,4 @@ const ClassroomSupport = () => {
     );
 };
 
-export default ClassroomSupport;
+export default Strikes;
