@@ -139,11 +139,10 @@ const StudentAllMakeupClasses = () => {
                             <div className="col-xl-10 col-lg-10" style={{marginTop: '30px'}}>
                                 <div className='ml-3' style={{height: '50px', width: '95%', background: '#D9D9D9'}}>
                                     <div className='row'>
-                                    <h4 className='ml-3 pt-3 col-lg-3'>Makeup Classes</h4>
-                                    <div className='col-lg-2 mt-2' style={{marginLeft: '-30px'}}><input type='text' className='form-control' placeholder='Lesson 01' /></div>
+                                    <h4 className='ml-3 pt-3 col-lg-5'>Jorjia Smith Classes</h4>
                                     <div className='col-lg-2 ml-3 mt-2'></div>
                                     <form className='col-lg-4 ml-3 mt-2'>
-                                        <input type='text' style={{marginLeft: '30px'}} className='form-control' placeholder='Search' />
+                                        <input type='text' className='form-control' placeholder='Search' />
                                     </form>
                                     </div>
                                 </div>
@@ -151,28 +150,32 @@ const StudentAllMakeupClasses = () => {
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table class="table table-bordered mb-5">
-                                              
+                                              <thead>
+                                                <tr>
+                                                    <td>Teacher Email</td>
+                                                    <td>Date</td>
+                                                    <td>Reason</td>
+                                                    <td>Action</td>
+                                                </tr>
+                                              </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Jorija Smith</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>                                                       
+                                                        <td>Jorjia.Smith@mail.com</td>                                                  
+                                                        <td>02/02/2024</td>                                                  
+                                                        <td>Student No Show</td>                                                  
+                                                        <td><Link>Cancel</Link></td>                                                  
                                                     </tr>
                                                     <tr>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>                                                       
+                                                        <td>Jorjia.Smith@mail.com</td>                                                  
+                                                        <td>02/02/2024</td>                                                  
+                                                        <td>Teacher No Show</td>                                                  
+                                                        <td><Link>Cancel</Link></td>                                                  
                                                     </tr>
                                                     <tr>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>
-                                                        <td><Link to={'/student-all-makeup-classes'}>Student Name</Link></td>                                                       
+                                                        <td>Jorjia.Smith@mail.com</td>                                                  
+                                                        <td>02/02/2024</td>                                                  
+                                                        <td>Teacher IT Issue</td>                                                  
+                                                        <td><Link>Cancel</Link></td>                                                  
                                                     </tr>
                                                 </tbody>
                                             </table>

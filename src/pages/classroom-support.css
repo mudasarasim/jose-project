@@ -1,0 +1,36 @@
+.table-responsive {
+    overflow-x: auto; /* Enables horizontal scrolling */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for touch devices */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders collapse for cleaner look */
+}
+
+@media (max-width: 768px) {
+    .table thead {
+        display: none; /* Hide table headers on smaller screens */
+    }
+
+    .table tbody tr {
+        display: block; /* Display rows as blocks */
+        margin-bottom: 10px;
+    }
+
+    .table tbody td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #ddd; /* Optional styling for row separation */
+    }
+
+    .table tbody td::before {
+        content: attr(data-label); /* Use `data-label` for each cell */
+        font-weight: bold;
+        flex-shrink: 0;
+        margin-right: 10px;
+        color: #555; /* Label text color */
+    }
+}

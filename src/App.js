@@ -25,6 +25,8 @@ import AdminProfile from './pages/admin-profile';
 import AdminNotifications from './pages/admin-notifications';
 import AdminSecurity from './pages/admin-security';
 import AdminHelp from './pages/admin-help';
+import StudentAllMakeupClasses from './pages/student-all-makeup-classes';
+import ClassroomSupport from './pages/classroom-support';
 
 function App() {
   return (
@@ -56,6 +58,8 @@ function App() {
           <Route path="/admin-notifications" element={<AdminNotifications />} />
           <Route path="/admin-security" element={<AdminSecurity />} />
           <Route path="/admin-help" element={<AdminHelp />} />
+          <Route path="/student-all-makeup-classes" element={<StudentAllMakeupClasses />} />
+          <Route path="/classroom-support" element={<ClassroomSupport />} />
         </Routes>
       </div>
     </Router>
