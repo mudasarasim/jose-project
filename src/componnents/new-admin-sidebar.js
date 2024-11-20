@@ -25,19 +25,19 @@ const NewAdminSidebar = () => {
                             <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/admin-profile') ? '#2F80ED' : 'none' }}>Edit Profile</span>
                         </Link>
                     </li>
-                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/admin-notifications') ? '#e9f2ff' : 'transparent' }}>
+                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/admin-notifications') ? '#f2f2f2f2' : 'transparent' }}>
                         <Link className="nav-link" to="/admin-notifications" style={{marginLeft: '-28px'}}>
                             <i className="mdi mdi-bell menu-icon" style={{ color: isActive('/admin-notifications') ? '#2F80ED' : '#858585' }}></i>
                             <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/admin-notifications') ? '#2F80ED' : 'none' }}>Notifications</span>
                         </Link>
                     </li>
-                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/admin-security') ? '#e9f2ff' : 'transparent' }}>
+                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/admin-security') ? '#f2f2f2f2' : 'transparent' }}>
                         <Link className="nav-link" to="/admin-security" style={{marginLeft: '-28px'}}>
                             <i className="mdi mdi-lock menu-icon" style={{ color: isActive('/admin-security') ? '#2F80ED' : '#858585' }}></i>
                             <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/admin-security') ? '#2F80ED' : 'none' }}>Security</span>
                         </Link>
                     </li>
-                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/admin-help') ? '#e9f2ff' : 'transparent' }}>
+                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/admin-help') ? '#f2f2f2f2' : 'transparent' }}>
                         <Link className="nav-link" to="/admin-help" style={{marginLeft: '-28px'}}>
                             <i className="mdi mdi-help menu-icon" style={{ color: isActive('/admin-help') ? '#2F80ED' : '#858585' }}></i>
                             <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/admin-help') ? '#2F80ED' : 'none' }}>Help</span>
