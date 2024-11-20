@@ -139,8 +139,9 @@ const MakeupClasses = () => {
                             <div className="col-xl-10 col-lg-10" style={{marginTop: '30px'}}>
                                 <div className='ml-3' style={{height: '50px', width: '95%', background: '#D9D9D9'}}>
                                     <div className='row'>
-                                    <h4 className='ml-4 pt-2 col-lg-4'><img src='assets/images/fix.png' alt='hyjk' height={30} />Makeup Classes</h4>
-                                    <div className='col-lg-3 mt-2'></div>
+                                    <h4 className='ml-3 pt-3 col-lg-3'>Makeup Classes</h4>
+                                    <div className='col-lg-2 mt-2'><input type='text' className='form-control' placeholder='Lesson 01' /></div>
+                                    <div className='col-lg-2 ml-3 mt-2'></div>
                                     <form className='col-lg-4 ml-3 mt-2'>
                                         <input type='text' className='form-control' placeholder='Search' />
                                     </form>
@@ -150,53 +151,28 @@ const MakeupClasses = () => {
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table class="table table-bordered mb-5">
-                                                <thead>
-                                                    <tr>
-                                                        <th style={{background: '#D9D9D9'}}>Date</th>
-                                                        <th style={{background: '#D9D9D9'}}>Subject</th>
-                                                        <th style={{background: '#D9D9D9'}}>Body</th>
-                                                    </tr>
-                                                </thead>
+                                              
                                                 <tbody>
                                                     <tr>
-                                                        <td>27/03/2024</td>
-                                                        <td>
-                                                             Subject
-                                                        </td>
-                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                                                        
+                                                        <td><Link to={'/'}>Jorija Smith</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>                                                       
                                                     </tr>
                                                     <tr>
-                                                        <td>27/03/2024</td>
-                                                        <td>
-                                                             Subject
-                                                        </td>
-                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                                                        
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>                                                       
                                                     </tr>
                                                     <tr>
-                                                        <td>27/03/2024</td>
-                                                        <td>
-                                                             Subject
-                                                        </td>
-                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                                                        
-                                                    </tr>
-                                                    <tr>
-                                                        <td>27/03/2024</td>
-                                                        <td>
-                                                             Subject
-                                                        </td>
-                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                                                        
-                                                    </tr>
-                                                    <tr>
-                                                        <td>27/03/2024</td>
-                                                        <td>
-                                                             Subject
-                                                        </td>
-                                                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</td>
-                                                        
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>
+                                                        <td><Link to={'/'}>Student Name</Link></td>                                                       
                                                     </tr>
                                                 </tbody>
                                             </table>
