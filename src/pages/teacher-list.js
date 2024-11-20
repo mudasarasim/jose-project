@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import AdminSidebar from '../componnents/admin-sidebar';
 
-const Strikes = () => {
+const TeacherList = () => {
     const [dropdownVisible, setDropdownVisible] = useState(false);
 
     const toggleDropdown = () => {
@@ -136,43 +136,47 @@ const Strikes = () => {
                     <div className="content-wrapper pb-0">
                         <div className="row">
                             <div className="col-xl-1 col-lg-1"></div>
-                            <div className="col-xl-10 col-lg-10" style={{marginTop: '30px'}}>
-                                <div className='ml-3' style={{height: '50px', width: '95%', background: '#D9D9D9'}}>
+                            <div className="col-xl-10 col-lg-10" style={{ marginTop: '30px' }}>
+                                <div className='ml-3' style={{ height: '50px', width: '95%', background: '#D9D9D9' }}>
                                     <div className='row'>
-                                    <h4 className='ml-3 pt-3 col-lg-3'>Teacher Strikes</h4>
-                                    <div className='col-lg-3 mt-2' style={{marginLeft: '-30px'}}><input type='date' className='form-control' placeholder='Lesson 01' /></div>
-                                    <div className='col-lg-1 ml-3 mt-2'></div>
-                                    <form className='col-lg-4 ml-3 mt-2'>
-                                        <input type='text' style={{marginLeft: '30px'}} className='form-control' placeholder='Search' />
-                                    </form>
+                                        <h4 className='ml-3 pt-3 col-lg-3'>Teacher Lsit</h4>
+                                        <div className='col-lg-2 mt-2' style={{ marginLeft: '-30px' }}><input type='text' className='form-control' placeholder='Active' /></div>
+                                        <div className='col-lg-2 ml-3 mt-2'></div>
+                                        <form className='col-lg-4 ml-3 mt-2'>
+                                            <input type='text' style={{ marginLeft: '30px' }} className='form-control' placeholder='Search' />
+                                        </form>
                                     </div>
                                 </div>
                                 <div>
                                     <div class="card-body">
                                         <div class="table-responsive">
                                             <table class="table table-bordered mb-5">
-                                              
+                                                <thead>
+                                                    <tr>
+                                                        <td style={{background: '#D9D9D9'}}>Teacher Name</td>
+                                                        <td style={{background: '#D9D9D9'}}>Status</td>
+                                                        <td style={{background: '#D9D9D9'}}>Email</td>
+                                                        <td style={{background: '#D9D9D9'}}>Contact</td>
+                                                    </tr>
+                                                </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td><Link to={'/teacher-strike-list'}>John Smith</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>                                                       
+                                                        <td>John Smith</td>
+                                                        <td>Active</td>
+                                                        <td>test@t.com</td>
+                                                        <td>+1 123 123 1234</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>                                                       
+                                                        <td>Joriga Smith</td>
+                                                        <td>Active</td>
+                                                        <td>test@t.com</td>
+                                                        <td>+1 123 123 1234</td>
                                                     </tr>
                                                     <tr>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>
-                                                        <td><Link to={'/teacher-strike-list'}>Teacher Name</Link></td>                                                       
+                                                        <td>John Smith</td>
+                                                        <td>Active</td>
+                                                        <td>test@t.com</td>
+                                                        <td>+1 123 123 1234</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -181,7 +185,7 @@ const Strikes = () => {
                                 </div>
 
                             </div>
-                           
+
                         </div>
                     </div>
                 </div>
@@ -190,4 +194,4 @@ const Strikes = () => {
     );
 };
 
-export default Strikes;
+export default TeacherList;

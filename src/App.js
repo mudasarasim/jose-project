@@ -30,6 +30,9 @@ import ClassroomSupport from './pages/classroom-support';
 import AdminTickets from './pages/admin-tickets';
 import AdminEditTicket from './pages/admin-edit-ticket';
 import Strikes from './pages/strikes';
+import TeacherStrikeList from './pages/teacher-strike-list';
+import StudentList from './pages/student-list';
+import TeacherList from './pages/teacher-list';
 
 function App() {
   return (
@@ -66,6 +69,9 @@ function App() {
           <Route path="/classroom-support" element={<ClassroomSupport />} />
           <Route path="/admin-tickets" element={<AdminTickets />} />
           <Route path="/strikes" element={<Strikes />} />
+          <Route path="/teacher-strike-list" element={<TeacherStrikeList />} />
+          <Route path="/student-list" element={<StudentList />} />
+          <Route path="/teacher-list" element={<TeacherList />} />
         </Routes>
       </div>
     </Router>

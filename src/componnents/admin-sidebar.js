@@ -49,22 +49,22 @@ const AdminSidebar = () => {
                             <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/strikes') ? '#2F80ED' : 'none' }}>Strikes</span>
                         </Link>
                     </li>
-                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/students') ? '#e9f2ff' : 'transparent' }}>
-                        <Link className="nav-link" to="/students" style={{marginLeft: '-28px'}}>
-                            <i className="mdi mdi-account-tie menu-icon" style={{ color: isActive('/students') ? '#2F80ED' : '#858585' }}></i>
-                            <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/students') ? '#2F80ED' : 'none' }}>Students</span>
+                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/student-list') ? '#e9f2ff' : 'transparent' }}>
+                        <Link className="nav-link" to="/student-list" style={{marginLeft: '-28px'}}>
+                            <i className="mdi mdi-account-tie menu-icon" style={{ color: isActive('/student-list') ? '#2F80ED' : '#858585' }}></i>
+                            <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/student-list') ? '#2F80ED' : 'none' }}>Students</span>
                         </Link>
                     </li>
-                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/teachers') ? '#e9f2ff' : 'transparent' }}>
-                        <Link className="nav-link" to="/teachers" style={{marginLeft: '-28px'}}>
-                            <i className="mdi mdi-book-open-page-variant menu-icon" style={{ color: isActive('/teachers') ? '#2F80ED' : '#858585' }}></i>
-                            <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/students') ? '#2F80ED' : 'none' }}>Teachers</span>
+                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/teacher-list') ? '#e9f2ff' : 'transparent' }}>
+                        <Link className="nav-link" to="/teacher-list" style={{marginLeft: '-28px'}}>
+                            <i className="mdi mdi-book-open-page-variant menu-icon" style={{ color: isActive('/teacher-list') ? '#2F80ED' : '#858585' }}></i>
+                            <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/teacher-list') ? '#2F80ED' : 'none' }}>Teachers</span>
                         </Link>
                     </li>
-                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/help') ? '#e9f2ff' : 'transparent' }}>
-                        <Link className="nav-link" to="/help" style={{marginLeft: '-28px'}}>
-                            <i className="mdi mdi-help menu-icon" style={{ color: isActive('/help') ? '#2F80ED' : '#858585' }}></i>
-                            <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/students') ? '#2F80ED' : 'none' }}>Help</span>
+                    <li className="nav-item" style={{ marginTop: '0px', marginLeft: '10px', width: '200px', background: isActive('/admin-help') ? '#e9f2ff' : 'transparent' }}>
+                        <Link className="nav-link" to="/admin-help" style={{marginLeft: '-28px'}}>
+                            <i className="mdi mdi-help menu-icon" style={{ color: isActive('/admin-help') ? '#2F80ED' : '#858585' }}></i>
+                            <span className="menu-title" style={{ fontSize: '18px', fontWeight: '400', marginLeft: '-3px', color: isActive('/admin-help') ? '#2F80ED' : 'none' }}>Help</span>
                         </Link>
                     </li>
                 </div>
